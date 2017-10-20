@@ -12,7 +12,7 @@ and open the template in the editor.
   html,body {
   height:100%;
   margin:0;
-    background: -webkit-linear-gradient(top, #0B486B, #CFF09E);
+  /*background: -webkit-linear-gradient(top, #0B486B, #CFF09E);*/
 
 }
 

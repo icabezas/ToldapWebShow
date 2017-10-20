@@ -10,12 +10,27 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
     </head>
     <body>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <div id="midground"></div>
-	<div id="foreground"></div>
-        
-        
+        <script>
+            window.sr = ScrollReveal();
+
+        </script>
+        <div class="content row topbar" id="one">
+            <div class="col-lg-12 foo">
+                <div style="height:100px;background-color: red"></div>
+            </div>
+        </div>
+        <div class="content" id="two"></div>
+        <div class="content" id="three"></div>
+        <div class="foo"> Foo </div>
+        <div class="bar"> Bar </div>
+        <script>
+            sr.reveal('.bar', {origin:'right', rotate: { x: 0, y: 0, z: 0 }, opacity:0, duration: 5000});
+        </script>
     </body> 
 </html>
